@@ -36,6 +36,7 @@
             this.currentScoreToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.currentTimeoutToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.restartButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel.Location = new System.Drawing.Point(12, 12);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(540, 431);
+            this.panel.Size = new System.Drawing.Size(655, 443);
             this.panel.TabIndex = 0;
             // 
             // statusStrip1
@@ -63,9 +64,9 @@
             this.currentScoreToolStripStatusLabel,
             this.toolStripStatusLabel2,
             this.currentTimeoutToolStripStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 458);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 470);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(564, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(679, 22);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
@@ -94,11 +95,25 @@
             this.currentTimeoutToolStripStatusLabel.Size = new System.Drawing.Size(13, 17);
             this.currentTimeoutToolStripStatusLabel.Text = "0";
             // 
+            // restartButton
+            // 
+            this.restartButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.restartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.restartButton.Location = new System.Drawing.Point(231, 225);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(218, 43);
+            this.restartButton.TabIndex = 0;
+            this.restartButton.Text = "Restart";
+            this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Visible = false;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
+            // 
             // Snake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 480);
+            this.ClientSize = new System.Drawing.Size(679, 492);
+            this.Controls.Add(this.restartButton);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel);
             this.Name = "Snake";
@@ -120,6 +135,7 @@
         private System.Windows.Forms.ToolStripStatusLabel currentScoreToolStripStatusLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel currentTimeoutToolStripStatusLabel;
+        private System.Windows.Forms.Button restartButton;
     }
 }
 

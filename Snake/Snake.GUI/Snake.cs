@@ -38,6 +38,7 @@ namespace Snake.GUI
 
             timer.Enabled = false;
             Game.RunAfterLoop();
+            restartButton.Visible = true;
         }
 
         public Panel Panel
@@ -55,6 +56,16 @@ namespace Snake.GUI
         {
             get { return Convert.ToInt32(currentTimeoutToolStripStatusLabel.Text); }
             set { currentTimeoutToolStripStatusLabel.Text = value.ToString(CultureInfo.InvariantCulture); }
+        }
+
+        private void restartButton_Click(object sender, EventArgs e)
+        {
+            Game.Restart();
+
+            Game.RunBeforeLoop();
+            timer.Interval = Game.Timeout;
+            timer.Enabled = true;
+            restartButton.Visible = false;
         }
     }
 }

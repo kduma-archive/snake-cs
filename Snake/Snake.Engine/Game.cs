@@ -11,8 +11,8 @@ namespace Snake.Engine
         private SnakeDirection _currentDirection = SnakeDirection.Right;
         private int _points = 0;
 
-        private readonly LinkedList<KeyValuePair<int, int>> _snake = new LinkedList<KeyValuePair<int, int>>();
-        private readonly List<KeyValuePair<int, int>> _foods = new List<KeyValuePair<int, int>>();
+        private LinkedList<KeyValuePair<int, int>> _snake = new LinkedList<KeyValuePair<int, int>>();
+        private List<KeyValuePair<int, int>> _foods = new List<KeyValuePair<int, int>>();
         private readonly Random _random = new Random();
 
         public int Width { get; private set; }
@@ -27,14 +27,25 @@ namespace Snake.Engine
 
         public Game(int width, int height, IRenderer renderer, IInputReceiver inputReceiver)
         {
-            Failed = false;
-            Timeout = 150;
             Renderer = renderer;
             InputReceiver = inputReceiver;
             Width = width - 2;
             Height = height - 2 - 1;
 
             Buffer = new Buffer(Width, Height, Renderer);
+
+            Restart();
+        }
+
+        public void Restart()
+        {
+            Failed = false;
+            Timeout = 150;
+            _points = 0;
+            _currentDirection = SnakeDirection.Right;
+
+            _snake.Clear();
+            _foods.Clear();
 
             _snake.AddLast(new KeyValuePair<int, int>(Width / 2, Height / 2));
 
