@@ -117,7 +117,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel);
             this.Name = "Snake";
-            this.Text = "SnakeGame";
+            this.Text = "administraty";
             this.Shown += new System.EventHandler(this.Snake_Shown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
