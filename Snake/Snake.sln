@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.Engine", "Snake.Engine\Snake.Engine.csproj", "{19344B22-E397-48CA-93B6-FA47974CC9E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.CLI", "Snake.CLI\Snake.CLI.csproj", "{8998213E-7E58-4DDA-A901-9072CE6BE4F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake.GUI", "Snake.GUI\Snake.GUI.csproj", "{2682F86E-2EB3-4BDD-9B3A-C0751F16ADA9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Snake.Setup", "Snake.Setup\Snake.Setup.vdproj", "{13E2CD5F-E410-4804-8C26-37100ED49983}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.8.21:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Snake.CLI\\Snake.CLI.csproj
+		SccProjectName1 = Snake.CLI
+		SccLocalPath1 = Snake.CLI
+		SccProjectUniqueName2 = Snake.Engine\\Snake.Engine.csproj
+		SccProjectName2 = Snake.Engine
+		SccLocalPath2 = Snake.Engine
+		SccProjectUniqueName3 = Snake.GUI\\Snake.GUI.csproj
+		SccProjectName3 = Snake.GUI
+		SccLocalPath3 = Snake.GUI
+		SccProjectUniqueName4 = Snake.Setup\\Snake.Setup.vdproj
+		SccProjectName4 = Snake.Setup
+		SccLocalPath4 = Snake.Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19344B22-E397-48CA-93B6-FA47974CC9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19344B22-E397-48CA-93B6-FA47974CC9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19344B22-E397-48CA-93B6-FA47974CC9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19344B22-E397-48CA-93B6-FA47974CC9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8998213E-7E58-4DDA-A901-9072CE6BE4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8998213E-7E58-4DDA-A901-9072CE6BE4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8998213E-7E58-4DDA-A901-9072CE6BE4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8998213E-7E58-4DDA-A901-9072CE6BE4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2682F86E-2EB3-4BDD-9B3A-C0751F16ADA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2682F86E-2EB3-4BDD-9B3A-C0751F16ADA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2682F86E-2EB3-4BDD-9B3A-C0751F16ADA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2682F86E-2EB3-4BDD-9B3A-C0751F16ADA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E2CD5F-E410-4804-8C26-37100ED49983}.Debug|Any CPU.ActiveCfg = Debug
+		{13E2CD5F-E410-4804-8C26-37100ED49983}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
